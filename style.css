@@ -1,7 +1,47 @@
+body {
+    background: #fafafa;
+}
+
 .dinito {
     width: 70px;
     height: 70px;
-    background: green;
+    background-image: url(imgz/dino.png);
     position: absolute;
     bottom: 0;
+}
+
+.cactus {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 0;
+    background-image: url(imgz/cactus.png);
+}
+
+.game-over {
+    text-align: center;
+    color: #777777;
+    margin: 50px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    
+    to {
+        background-position: 0%;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0px;
+    background-image: url(imgz/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 700s infinite linear;
+    -webkit-animation: slideright 700s infinite linear;
+    width: 100%;
+    height: 200px;
 }
