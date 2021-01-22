@@ -6,7 +6,7 @@ let isGameOver = false;
 let position = 0;
 
 function handleKeyUp(event){
-    if (event.KeyCode === 32) {
+    if (event.code === "ArrowUp") {
         if (!isJumping) {
             jump();
         }
